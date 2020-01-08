@@ -1,3 +1,6 @@
+pre: libudev only understands the partation under /dev which usually called devnode . 
+     the real mount path is configured under /etc/udev/rules.d normallly
+     In fact,udev/kernel envent detected by libudev is not responsible for mount path building.
 功能说明：
 1、当前只支持光盘、红盘（reddisk）的热插拔
 2、udevadm_monitor函数需要一直处于执行状态，才能动态捕捉usb端口的实时状态。
